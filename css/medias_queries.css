@@ -39,6 +39,7 @@ article {
 
 .pub {
     grid-area: pub;
+    
 
 
 }
@@ -59,3 +60,21 @@ article {
 .image img{
     width: 200px;
 }
+
+@media print 
+{
+    .articale {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+    .pub {
+        display: none; 
+    }
+    .image {
+        
+    }
+    
+}
+    
